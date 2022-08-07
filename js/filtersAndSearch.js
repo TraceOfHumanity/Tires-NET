@@ -30,7 +30,7 @@ dropDownBtn.addEventListener('click', function() {
 });
 
 dropDownBtnAside.addEventListener('click', function() {
-  dropFilters.classList.toggle('main__siteBar');
+  dropFilters.classList.toggle('main__siteBar--active');
   this.classList.add('.main__siteBar--active');
 });
 
