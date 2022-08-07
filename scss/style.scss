@@ -568,7 +568,7 @@ $liteGray: #F6F6F6;
   // ===================================ЗНИКНЕНЯ САЙТБАРУ ПРИ ШИРИНІ 767PX===================================
   @media (max-width: 767px) {
     .main__siteBar {
-      width: calc(360px + (514 - 360) * ((100vw - 360px) / (767 - 360)));
+      width: calc(514px + (514 - 514) * ((100vw - 360px) / (767 - 360)));
       display: none;
       left: -100%;
       box-shadow: 0px 0px 5px 1px #000000;
@@ -578,7 +578,7 @@ $liteGray: #F6F6F6;
       display: block;
       position: absolute;
       z-index: 2;
-      left: calc(6px + (249 - 6) * ((100vw - 360px) / (767 - 360)));
+      left: calc(-150px + (530 - 150) * ((100vw - 360px) / (767 - 360)));
       top: 45px;
 
       .categories__search+.active__filters {
@@ -594,6 +594,49 @@ $liteGray: #F6F6F6;
 
     .form__siteBar {
       display: flex;
+      height: 767px;
+
+      // box-shadow: 0px 0px 5px 1px #000000;
+      .active__filters {
+        // box-shadow: 0px 0px 5px 1px #000000;
+      }
+    }
+
+    .categories__search+.active__filters {
+      margin-top: 0px;
+    }
+
+
+  }
+  @media (max-width: 530px) {
+    .main__siteBar {
+      width: calc(255px + (255 - 255) * ((100vw - 320px) / (530 - 320)));
+      display: none;
+      left: -100%;
+      box-shadow: none;
+    }
+
+    .main__siteBar--active {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      left: calc(33px + (260 - 33) * ((100vw - 320px) / (530 - 320)));
+      top: 45px;
+
+      .categories__search+.active__filters {
+        margin-top: 0px;
+      }
+
+      .searchByKeyword {
+        margin: 15px 0 10px 0;
+      }
+    }
+
+    .form__siteBar {}
+
+    .form__siteBar {
+      display: flex;
+      flex-direction: column;
       height: 767px;
 
       // box-shadow: 0px 0px 5px 1px #000000;
@@ -960,7 +1003,9 @@ $liteGray: #F6F6F6;
       height: 162px;
     }
 
-    .image__card {}
+    .image__card {
+      width: 100%;
+    }
 
     .card__info {
       font-family: 'Montserrat';
@@ -1340,14 +1385,57 @@ $liteGray: #F6F6F6;
         .card-content{
           padding: 0 5px;
           width: calc(360px + (767 - 360) * ((100vw - 360px) / (767 - 360)));
+          .card{
+            width: calc(158px + (190 - 158) * ((100vw - 360px) / (767 - 360)));
+          }
+          .image__card{
+            width: calc(135px + (162 - 135) * ((100vw - 360px) / (767 - 360)));
+            height: calc(135px + (162 - 135) * ((100vw - 360px) / (767 - 360)));
+          }
         }
         .main__contentBasic{
           .pagination{
             width: calc(360px + (760 - 360) * ((100vw - 360px) / (767 - 360)));
+
+          }
+          .additionally{
+            padding: 0 5px;
+            width: calc(360px + (760 - 360) * ((100vw - 360px) / (767 - 360)));
           }
         }
-      }
+        .additionally{
+          padding: 0 5px;
+          width: calc(360px + (760 - 360) * ((100vw - 360px) / (767 - 360)));
+        }
+      } 
   }
+  @media (max-width: 340px) {
+    
+    .main__content {
+      // width: calc(100px + (825 - 100) * ((100vw - 360px) / (1120 - 360)));
+      .main__contentTop {
+        width: calc(360px + (767 - 360) * ((100vw - 360px) / (767 - 360)));
+        
+      }
+      .card-content{
+        
+        .card{
+          width: calc(270px + (329 - 270) * ((100vw - 320px) / (340 - 320)));
+        }
+        .card__img{
+          margin: 0 auto;
+          width: calc(135px + (162 - 135) * ((100vw - 320px) / (340 - 320)));
+          height: calc(135px + (162 - 135) * ((100vw - 320px) / (340 - 320)));
+        }
+        .image__card{
+          // margin: 0 auto;
+          width: calc(135px + (162 - 135) * ((100vw - 320px) / (340 - 320)));
+          height: calc(135px + (162 - 135) * ((100vw - 320px) / (340 - 320)));
+        }
+      }
+      
+    } 
+}
 }
 
 .additionally {
