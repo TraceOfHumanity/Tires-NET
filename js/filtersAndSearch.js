@@ -29,10 +29,13 @@ dropDownBtn.addEventListener('click', function() {
   this.classList.add('.dropdown__button--active');
 });
 
+
+
 dropDownBtnAside.addEventListener('click', function() {
   dropFilters.classList.toggle('main__siteBar--active');
   this.classList.add('.main__siteBar--active');
 });
+
 
 
 
