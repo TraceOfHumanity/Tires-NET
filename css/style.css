@@ -299,11 +299,11 @@ h6 {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  padding-right: 6px;
+  padding-right: 7px;
 }
 .crumbs .container .crumb + .crumb::before {
   content: "|";
-  padding-right: 9px;
+  padding-right: 8px;
 }
 .crumbs .crumb:last-child {
   color: #419EF4;
@@ -335,7 +335,7 @@ h6 {
   width: 100%;
   text-align: left;
   background: #FFFFFF;
-  padding: 13px 10px;
+  padding: 13px 10px 12px;
   border: 1px solid #DFDFDF;
   font-weight: 400;
   font-size: 14px;
@@ -354,7 +354,7 @@ h6 {
 }
 .main .dropdown__arrow {
   position: absolute;
-  right: 15px;
+  right: 16px;
   top: 20px;
 }
 .main .dropdown__list {
@@ -416,10 +416,21 @@ h6 {
 .main .main__siteBar .categories__search {
   background: #F6F6F6;
   border-radius: 10px;
-  padding: 28px 20px;
+  padding: 21px 20px 28px;
+}
+.main .main__siteBar .vehicle {
+  display: inline-block;
+  font-family: 'Montserrat';
+  padding-left: 5px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 .main .main__siteBar .fitment {
-  padding: 41px 0px 12px 0;
+  padding: 41px 0px 12px 1px;
 }
 .main .main__siteBar .fitment__text {
   font-family: 'Montserrat';
@@ -440,7 +451,9 @@ h6 {
 .main .main__siteBar .active__filters .active__filters-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 11px;
+  padding-bottom: 9px;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #FFFFFF;
 }
 .main .main__siteBar .active__filters .active__filters-topTitle {
   font-family: 'Montserrat';
@@ -792,6 +805,7 @@ h6 {
   line-height: 17px;
   color: #000000;
   margin-left: 1px;
+  margin-top: 2px;
 }
 .main .main__content .main__contentBasic {
   align-items: center;
@@ -877,7 +891,7 @@ h6 {
 .main .main__content .card-content {
   width: 825px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 18px;
@@ -928,6 +942,21 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.main .main__content .checkPrice {
+  padding: 13px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #419EF4;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
 }
 .main .main__content .costs {
   font-weight: 500;
@@ -1271,6 +1300,14 @@ h6 {
   color: #000000;
 }
 
+.content {
+  display: block;
+}
+
+.content__hidden {
+  display: none;
+}
+
 .footer {
   background-color: #1A1535;
   color: #FFFFFF;
@@ -1285,6 +1322,7 @@ h6 {
 }
 .footer .more {
   position: relative;
+  cursor: pointer;
 }
 .footer ._icon-arrow {
   position: absolute;

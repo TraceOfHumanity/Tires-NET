@@ -18,9 +18,17 @@ const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
 const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
 const dropDownBtnAside = document.querySelector('.filtersAside');
 const dropFilters = document.querySelector('.main__siteBar');
+const buttonMoreFoкOnePageInFooter = document.querySelector('#button');
+const moreInfoPage1 = document.querySelector('#content');
 
-
-
+buttonMoreFoкOnePageInFooter.addEventListener('click', function () {
+  moreInfoPage1.classList.toggle('content__hidden');
+  if (moreInfoPage1.classList.contains('content__hidden')) {
+    buttonMoreFoкOnePageInFooter.textContent = 'More'
+  } else {
+    buttonMoreFoкOnePageInFooter.textContent = 'Less';
+  }
+})
 
 
 // відкрити\закрити випадаючий список по кліку на нього
@@ -30,11 +38,23 @@ dropDownBtn.addEventListener('click', function() {
 });
 
 
-
+//відкриття\закриття сайтбару для мобільних пристроїв
 dropDownBtnAside.addEventListener('click', function() {
   dropFilters.classList.toggle('main__siteBar--active');
   this.classList.add('.main__siteBar--active');
 });
+
+// Кнопка показати більше у футері
+
+
+
+// duttomMoreFoкOnePageInFooter.addEventListener('click', function () {
+//   if (moreInfoPage1.classList.toggle('additionally__hidden')) {
+//     duttomMoreFoкOnePageInFooter.textContent = 'More'
+//   } else {
+//     duttomMoreFoкOnePageInFooter.textContent = 'Less'
+//   }
+// })
 
 
 
