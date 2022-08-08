@@ -1251,7 +1251,7 @@ h6 {
   padding: 15px 0px 0px 20px;
   margin-left: -1px;
 }
-.main .main__content ._icon-Group-5::before {
+.main .main__content ._icon-box::before {
   position: absolute;
   top: 24px;
   left: -11px;

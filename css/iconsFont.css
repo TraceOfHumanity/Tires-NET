@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?udsdth') format('truetype'),
-    url('fonts/icomoon.woff?udsdth') format('woff'),
-    url('fonts/icomoon.svg?udsdth#icomoon') format('svg');
+    url('fonts/icomoon.ttf?8w26ew') format('truetype'),
+    url('fonts/icomoon.woff?8w26ew') format('woff'),
+    url('fonts/icomoon.svg?8w26ew#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,7 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-._icon-Group-5:before {
+._icon-phone:before {
+  content: "\e90b";
+}
+._icon-box:before {
   content: "\e90a";
 }
 ._icon-star:before {
@@ -50,7 +53,6 @@
 }
 ._icon-logoCar:before {
   content: "\e907";
-  margin-right: 27px;
 }
 ._icon-twitter:before {
   content: "\e908";
