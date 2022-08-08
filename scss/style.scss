@@ -394,7 +394,7 @@ $liteGray: #F6F6F6;
     .vehicle {
       display: inline-block;
       font-family: 'Montserrat';
-      padding-left: 5px;
+      padding-left: 4px;
       padding-bottom: 20px;
       font-style: normal;
       font-weight: 500;
@@ -679,7 +679,7 @@ $liteGray: #F6F6F6;
       width: 825px;
       background: $liteGray;
       padding: 9px 16px;
-      margin-bottom: 22px;
+      margin-bottom: 23px;
       display: flex;
       position: relative;
       justify-content: space-between;
@@ -712,7 +712,7 @@ $liteGray: #F6F6F6;
         width: 100%;
         text-align: left;
         background: #FFFFFF;
-        padding: 12px 10px;
+        padding: 13px 10px 12px;
         border: 1px solid #DFDFDF;
         font-family: 'Montserrat';
         font-style: normal;
@@ -1003,13 +1003,14 @@ $liteGray: #F6F6F6;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 18px;
+      margin-left: 1px;
     }
 
     .card {
       width: calc(190px + (190 - 190) * ((100vw - 360px) / (1920 - 360)));
       background: #FFFFFF;
       border: 1px solid #419EF4;
-      padding: 7px 11px 29px;
+      padding: 7px 12px 29px;
       margin-bottom: 7px;
       border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -1022,6 +1023,7 @@ $liteGray: #F6F6F6;
       width: 162px;
       height: 162px;
       position: relative;
+      left: -1px;
     }
 
     .image__card {
@@ -1034,8 +1036,9 @@ $liteGray: #F6F6F6;
     }
 
     .card__infoTop {
-      padding: 17px 0px;
+      padding: 19px 0px 13px;
       border-bottom: 1px solid #F6F6F6;
+      margin-left: -1px;
     }
 
     .product__name {
@@ -1050,13 +1053,13 @@ $liteGray: #F6F6F6;
       font-size: 14px;
       line-height: 17px;
       color: #000000;
-      margin: 18px 0px;
+      margin: 17px 0px 18px;
     }
 
     .product__size {}
 
     .card__price {
-      padding: 9px 0px;
+      padding: 13px 0px 11px;
       border-bottom: 1px solid #F6F6F6;
       display: flex;
       justify-content: space-between;
@@ -1064,9 +1067,17 @@ $liteGray: #F6F6F6;
       position: relative;
     }
 
+    .button__checkP {
+      margin-top: -13px;
+      position: relative;
+      height: 33px;
+    }
+
     .checkPrice {
-      padding: 13px 0;
-      width: 100%;
+      top: 0px;
+      left: -5px;
+      padding: 14px 0px 10px 0;
+      width: 173px;
       display: flex;
       justify-content: center;
       background: #419EF4;
@@ -1078,26 +1089,29 @@ $liteGray: #F6F6F6;
       line-height: 17px;
       text-align: center;
       color: #FFFFFF;
-      position: relative;
+      position: absolute;
       z-index: 3;
       cursor: pointer;
     }
 
     .dropdownInCard {
       position: absolute;
-      padding: 20px 14px;
-      width: 166px;
+      padding: 15px 3px 14px 14px;
+      width: 168px;
+      height: 124px;
       z-index: 2;
       top: 30px;
-      left: 0px;
+      left: -4px;
       background: #FFFFFF;
       border: 1px solid #DFDFDF;
       border-radius: 10px;
       display: block;
+
       .dropdownInCard__list {
-        height: 97px;
+        height: 92px;
         overflow-y: scroll;
         margin-top: 10px;
+
         li {
           .dropdownInCard__listItem {
             font-family: 'Montserrat';
@@ -1107,19 +1121,20 @@ $liteGray: #F6F6F6;
             line-height: 30px;
             color: #419EF4;
           }
+
           ::-webkit-scrollbar {
             padding: 3px;
             width: 8px;
             margin-right: 8px;
           }
-  
+
           ::-webkit-scrollbar-track {
-  
+
             background: #D9D9D9;
             border-radius: 10px;
           }
-  
-  
+
+
           ::-webkit-scrollbar-thumb {
             height: 20px;
             background: #419EF4;
@@ -1148,9 +1163,11 @@ $liteGray: #F6F6F6;
       }
 
     }
-    .dropdownInCard--hidden{
+
+    .dropdownInCard--hidden {
       display: none;
     }
+
     .dropdownInCard__item {
       font-family: 'Montserrat';
       font-style: normal;
@@ -1173,7 +1190,7 @@ $liteGray: #F6F6F6;
 
     .setFour {
       display: inline-block;
-      margin-right: 9px;
+      margin-right: 8px;
       margin-top: -4px;
       font-weight: 300;
       font-size: 14px;
@@ -1194,7 +1211,8 @@ $liteGray: #F6F6F6;
     .package {
       padding: 0px 0px 0px 20px;
       position: relative;
-      // z-index: 1;
+      margin-left: -1px;
+      margin-top: -2px;
     }
 
     ._icon-dollar::before {
@@ -1208,6 +1226,7 @@ $liteGray: #F6F6F6;
     .delivery {
       position: relative;
       padding: 15px 0px 0px 20px;
+      margin-left: -1px;
     }
 
     ._icon-Group-5::before {
@@ -1230,6 +1249,7 @@ $liteGray: #F6F6F6;
       padding: 3px 3px 3px 4px;
       box-shadow: 5px 5px 0pc 0px #419EF4;
       position: relative;
+      left: 1px;
     }
 
     .pagination li {
@@ -1271,7 +1291,7 @@ $liteGray: #F6F6F6;
     }
 
     .previous-page {
-      margin: 2px 2px 2px 5px;
+      margin: 2px 3px 2px 5px;
     }
 
     .next-page {
@@ -1582,10 +1602,12 @@ $liteGray: #F6F6F6;
 
 .additionally {
   margin-top: 54px;
+  margin-right: -4px;
 }
 
 .additionally__info {
   margin-bottom: 19px;
+  margin-left: 1px;
 }
 
 .title__bottomArticle {
@@ -1619,7 +1641,8 @@ $liteGray: #F6F6F6;
 .footer {
   background-color: #1A1535;
   color: #FFFFFF;
-  padding: 23px 5px;
+  padding: 17px 5px;
+  margin-top: 26px;
 
   .footer__container {
     width: calc(320px + (1110 - 320) * ((100vw - 320px) / (1920 - 320)));
