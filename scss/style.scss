@@ -1021,6 +1021,7 @@ $liteGray: #F6F6F6;
     .card__img {
       width: 162px;
       height: 162px;
+      position: relative;
     }
 
     .image__card {
@@ -1060,6 +1061,7 @@ $liteGray: #F6F6F6;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
 
     .checkPrice {
@@ -1076,6 +1078,89 @@ $liteGray: #F6F6F6;
       line-height: 17px;
       text-align: center;
       color: #FFFFFF;
+      position: relative;
+      z-index: 3;
+      cursor: pointer;
+    }
+
+    .dropdownInCard {
+      position: absolute;
+      padding: 20px 14px;
+      width: 166px;
+      z-index: 2;
+      top: 30px;
+      left: 0px;
+      background: #FFFFFF;
+      border: 1px solid #DFDFDF;
+      border-radius: 10px;
+      display: block;
+      .dropdownInCard__list {
+        height: 97px;
+        overflow-y: scroll;
+        margin-top: 10px;
+        li {
+          .dropdownInCard__listItem {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            color: #419EF4;
+          }
+          ::-webkit-scrollbar {
+            padding: 3px;
+            width: 8px;
+            margin-right: 8px;
+          }
+  
+          ::-webkit-scrollbar-track {
+  
+            background: #D9D9D9;
+            border-radius: 10px;
+          }
+  
+  
+          ::-webkit-scrollbar-thumb {
+            height: 20px;
+            background: #419EF4;
+            border-radius: 10px;
+          }
+        }
+
+        ::-webkit-scrollbar {
+          padding: 3px;
+          width: 8px;
+          margin-right: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+
+          background: #D9D9D9;
+          border-radius: 10px;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+          height: 20px;
+          background: #419EF4;
+          border-radius: 10px;
+        }
+      }
+
+    }
+    .dropdownInCard--hidden{
+      display: none;
+    }
+    .dropdownInCard__item {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 30px;
+      /* or 214% */
+
+
+      color: #419EF4;
     }
 
     .costs {

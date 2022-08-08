@@ -21,6 +21,13 @@ const dropFilters = document.querySelector('.main__siteBar');
 const buttonMoreFoкOnePageInFooter = document.querySelector('#button');
 const moreInfoPage1 = document.querySelector('#content');
 
+
+
+
+
+
+
+// Кнопка показати більше у футері
 buttonMoreFoкOnePageInFooter.addEventListener('click', function () {
   moreInfoPage1.classList.toggle('content__hidden');
   if (moreInfoPage1.classList.contains('content__hidden')) {
@@ -29,6 +36,9 @@ buttonMoreFoкOnePageInFooter.addEventListener('click', function () {
     buttonMoreFoкOnePageInFooter.textContent = 'Less';
   }
 })
+
+
+
 
 
 // відкрити\закрити випадаючий список по кліку на нього
@@ -43,19 +53,6 @@ dropDownBtnAside.addEventListener('click', function() {
   dropFilters.classList.toggle('main__siteBar--active');
   this.classList.add('.main__siteBar--active');
 });
-
-// Кнопка показати більше у футері
-
-
-
-// duttomMoreFoкOnePageInFooter.addEventListener('click', function () {
-//   if (moreInfoPage1.classList.toggle('additionally__hidden')) {
-//     duttomMoreFoкOnePageInFooter.textContent = 'More'
-//   } else {
-//     duttomMoreFoкOnePageInFooter.textContent = 'Less'
-//   }
-// })
-
 
 
 
@@ -139,3 +136,16 @@ document.addEventListener('keydown', function (e) {
 })
 });
 
+document.querySelectorAll('.card').forEach(function (dropDownInCards) {
+  const dropDownBtnInCard = dropDownInCards.querySelector('#dropdownInCardID');
+
+
+  dropDownInCards.addEventListener('click', function () {
+    dropDownBtnInCard.classList.toggle('dropdownInCard--hidden');
+    // if (moreInfoPage1.classList.contains('content__hidden')) {
+    //   buttonMoreFoкOnePageInFooter.textContent = 'More'
+    // } else {
+    //   buttonMoreFoкOnePageInFooter.textContent = 'Less';
+    // }
+  })
+});
