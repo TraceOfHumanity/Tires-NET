@@ -137,15 +137,21 @@ document.addEventListener('keydown', function (e) {
 });
 
 document.querySelectorAll('.card').forEach(function (dropDownInCards) {
-  const dropDownBtnInCard = dropDownInCards.querySelector('#dropdownInCardID');
+  const dropDownBtnInCard = dropDownInCards.querySelector('#checkPriceID');
+  const dropDownlistInCard = dropDownInCards.querySelector('#dropdownInCardID');
 
 
-  dropDownInCards.addEventListener('click', function () {
-    dropDownBtnInCard.classList.toggle('dropdownInCard--hidden');
-    // if (moreInfoPage1.classList.contains('content__hidden')) {
-    //   buttonMoreFoкOnePageInFooter.textContent = 'More'
-    // } else {
-    //   buttonMoreFoкOnePageInFooter.textContent = 'Less';
-    // }
+  dropDownBtnInCard.addEventListener('click', function () {
+    dropDownlistInCard.classList.toggle('dropdownInCard--hidden');
+    
   })
 });
+// document.querySelectorAll('.card').forEach(function (dropDownInCards) {
+//   const dropDownBtnInCard = dropDownInCards.querySelector('#dropdownInCardID');
+
+
+//   dropDownInCards.addEventListener('click', function () {
+//     dropDownBtnInCard.classList.toggle('dropdownInCard--hidden');
+    
+//   })
+// });
